@@ -3,7 +3,7 @@ I am student at ESEC has created this repositry to solve the JAVA OOPS LAB PORTA
 
 This repositry is created for Educational Purpose and do not use this for Malpractice and I am not responsible for any kind of malpractice tried by the student.
 
-NOTE:
+**NOTE:**
 * Use it wisely
 * Use it to gain knowledge
 * Also post comments if any issue in the code
