@@ -1,18 +1,15 @@
 import java.util.Scanner;
 
-public class Main{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        String n = sc.nextLine();
-        String[] arr = n.split("");
-        int[] a = new int[arr.length];
-        for(int i=0;i<arr.length;i++){
-            a[i] = Integer.parseInt(arr[i]);
+public class Main {
+    public static void main(String[] args) {
+        String input = "PROGRAM";
+        int length = input.length();
+
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(input.charAt(j));
+            }
+            System.out.println();
         }
-        int sum = 0;
-        for(int j=0;j<arr.length;j++){
-            sum += a[j];
-        }
-        System.out.println(sum);
     }
 }
