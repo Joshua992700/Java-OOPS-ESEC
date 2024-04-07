@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class MyTriangle {
+class MyTriangle {
     public static double area(double base, double height) {
         return 0.5 * base * height;
     }
@@ -11,7 +11,7 @@ public class MyTriangle {
     }
 }
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
