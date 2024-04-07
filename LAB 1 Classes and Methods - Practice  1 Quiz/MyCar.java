@@ -1,4 +1,4 @@
-class Main {
+public class Main {
     int max = 200;
   
     public void fullThrottle() {
