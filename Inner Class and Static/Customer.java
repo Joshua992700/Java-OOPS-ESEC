@@ -1,6 +1,27 @@
 import java.util.Scanner;
 
 public class Main {
+    
+    static class Address {
+        private int door;
+        private String street;
+        private String city;
+        private String dist;
+        private String state;
+        
+        public Address(int door, String street, String city, String dist, String state) {
+            this.door = door;
+            this.street = street;
+            this.city = city;
+            this.dist = dist;
+            this.state = state;
+        }
+        
+        public String toString() {
+            return door + ", " + street + ", " + city + ", " + dist + ", " + state;
+        }
+    }
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[] n = scanner.nextLine().split(": ");
@@ -33,9 +54,8 @@ public class Main {
             String[] n14 = scanner.nextLine().split(": ");
             String statec = n14[n14.length - 1];
             System.out.println(name + ", " + number);
-            System.out.println("Permanent Address : " + door + ", " + street + ", " + city + ", " + dist + ", " + state);
-            System.out.println("Communication Address : " + doorc + ", " + streetc + ", " + cityc + ", " + distc + ", " + statec);
+            System.out.println("Permanent Address : " + new Address(door, street, city, dist, state));
+            System.out.println("Communication Address : " + new Address(Integer.parseInt(doorc), streetc, cityc, distc, statec));
         }
     }
 }
-
