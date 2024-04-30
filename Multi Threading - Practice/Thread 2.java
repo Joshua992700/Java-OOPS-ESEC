@@ -34,11 +34,11 @@ public class Main {
             Thread[] threads = new Thread[T];
             for (int i = 0; i < T; i++) {
                 threads[i] = new NumberPrinter(a[i], a[i] + ran - 1);
-                System.out.println("Thread " + (i + 1) + " Printing:");
-                threads[i].start();
             }
 
             for (int i = 0; i < T; i++) {
+                System.out.println("Thread " + (i + 1) + " Printing:");
+                threads[i].start();
                 try {
                     threads[i].join(); // Wait for each thread to finish before printing next thread's output
                 } catch (InterruptedException e) {
